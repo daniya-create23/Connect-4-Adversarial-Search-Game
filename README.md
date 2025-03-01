@@ -116,6 +116,18 @@ The project evaluates the performance of the agents in the following matchups:
 - **Game Length**: The number of moves in each game.  
 - **Alpha-Beta Pruning**: The number of prunes performed during the search.  
 
+### **Summary of Results**  
+| Matchup | Wins | Losses | Draws | Avg Game Length | Avg Alpha Prunes | Avg Beta Prunes |
+|---------|------|--------|-------|-----------------|------------------|-----------------|
+| Agent A vs Agent A | 4 | 5 | 1 | 26.20 | 685.30 | 1637.60 |
+| Agent A vs Agent C | 10 | 0 | 0 | 10.60 | 202.10 | 457.50 |
+| Agent A vs Agent B (p=0.5) | 9 | 1 | 0 | 12.10 | 224.70 | 530.10 |
+| Agent B (p=0.75) vs Agent C | 8 | 2 | 0 | 13.40 | 0.00 | 0.00 |
+| Agent B (p=0.5) vs Agent C | 7 | 3 | 0 | 18.70 | 0.00 | 0.00 |
+| Agent B (p=0.25) vs Agent C | 6 | 4 | 0 | 19.60 | 0.00 | 0.00 |
+
+---
+
 ## **Observations**  
 - **Minimax Dominance**: Agent A (Minimax) consistently outperforms the other agents, especially against random strategies.  
 - **Expectimax Performance**: Agent B's performance declines as the probability of making optimal moves decreases. With lower `p` values, Agent B behaves more like a random agent.  
